@@ -1,0 +1,29 @@
+#swapi-data {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* most common pattern */
+
+}
+
+div * {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 10rem;
+  height: 15rem;
+  padding: 20px;
+
+  font-size: 16px;
+  font-family: 'Lacquer';
+  color: white;
+
+  background: url('star.jpg');
+  background-size: cover;
+}
+
+div:nth-child(even) {
+  background: url('galaxy.jpg');
+  background-size: cover;
+}
+
+div *:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
